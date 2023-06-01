@@ -1,17 +1,57 @@
-<html>
-<head>
+
+<!-- saved from url=(0033)http://127.0.0.1:5500/hevanx.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 </head>
 <body>
-   <h1>Hevanx Webpage</h1>
-   <img src="https://pixelturkey.com/gifs/skulls.gif"alt="" width="450" height="333"> 
+   <h1>Hevanx</h1>
+   <img src="./hevanx_files/skulls.gif" alt="" width="450" height="333"> 
    <ul>
-    <li><h1><a href="https://youtu.be/ckn1zJ9zU_Y">HevanX 4/20 show live</a></h1></li>
+    <li><h1><a href="https://youtu.be/bnyd_LNV9Lo">Dancing with the ligths off (Music Video)</a></h1></li>
+    <li><h1><a href="https://open.spotify.com/album/712ssc1aBAvOHN73CGWdd9?si=FZhEr5VBTRiF5EfPZ0of8w">"Haunted House in the Rockies" (New Album)</a></h1></li>
     <li><h1><a href="https://open.spotify.com/artist/2evIfrS6NcgxfLq0fWV5rI?si=hRAcSNQ8TkWU9HjonUg2aQ">Spotify</a></h1></li>
     <li><h1><a href="https://music.apple.com/us/artist/hevanx/1468055386">Apple Music</a></h1></li>
     <li><h1><a href="https://www.youtube.com/channel/UCX2qvXpxJl5NqXNufmMj7ow">Youtube</a></h1></li>
    </ul>
-</body>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
 <style>
     body{
         color: white; 
@@ -27,4 +67,4 @@
     a{color: aliceblue;}
    ul{position: relative;right: 200px;}
 </style>
-</html>
+</body></html>
